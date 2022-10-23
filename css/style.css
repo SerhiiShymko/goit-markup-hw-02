@@ -11,9 +11,8 @@
     --accent-color: #2196F3;
     --black-color: #000000;
     --main-white-color: #FFFFFF;
-    --second-white-color: #F5F5F5;
-    --main-bg-color: #2F303A;
-    --second-bg-color: #F5F4FA;
+    --second-bg-color: #2F303A;
+    --bg-color: #F5F4FA;
     --activ: #188CE8;
     --clear-color-text: rgba(255, 255, 255, 0.6);
 }
@@ -21,7 +20,7 @@
 /* General styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--second-white-color);
+    background-color: var(--main-white-color);
     color: var(--main-color-text);
    }
 
@@ -50,9 +49,6 @@ body {
 /* header styles */
 .header-list-link.current {
     color: var(--accent-color);
-}
-.header-page {
-    background-color: var(--main-white-color)
 }
   .header-logo-studio {
         font-family: 'Raleway';
@@ -95,7 +91,7 @@ body {
 
 /* Hero styles*/
 .hero {
-    background-color: var(--main-bg-color);
+    background-color: var(--second-bg-color);
 }
 .hero-title {
     font-weight: 900;
@@ -106,25 +102,24 @@ body {
     text-transform: uppercase;
     color: var(--main-white-color);
 }
-.button {
+
+.button:focus,
+.button:hover{
     color: var(--main-white-color);
-    background-color: var(--accent-color);
-}
-.button :focus,
-.button :hover{
-    color: var(--activ);
+    background-color: var(--activ);
 }
 .hero-button {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+
     cursor: pointer;
 
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
+
 }
 /* features */
 .features-title {
@@ -150,7 +145,10 @@ body {
    }
 /* team */ 
 .team {
-    background-color: var(--second-bg-color)
+    background-color: var(--bg-color)
+}
+.team-list {
+    background-color: var(--main-white-color);
 }
 .team-title {
     font-weight: 700;
@@ -175,7 +173,7 @@ body {
 }
 /* footer */
 .footer-page {
-    background-color: var(--main-bg-color)
+    background-color: var(--second-bg-color)
 }
 .footer-logo-studio {
     font-family: 'Raleway';
@@ -230,6 +228,7 @@ color: var(--accent-color);
     line-height: calc(26 / 16);
     letter-spacing: 0.03em;
     color: var(--main-color-text);
+    background-color: var(--bg-color);
 }
 .project-list {
     font-weight: 700;
