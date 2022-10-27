@@ -47,9 +47,7 @@ body {
 
 
 /* header styles */
-.header-list-link.current {
-    color: var(--accent-color);
-}
+
   .header-logo-studio {
         font-family: 'Raleway';
         font-weight: 700;
@@ -73,8 +71,12 @@ body {
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--main-color-text);
+    }
     
-}
+.header-nav .current {
+        color: var(--accent-color);
+    }
+
 .header-list-link:hover,
 .header-list-link:focus,
 .header-contats:hover,
